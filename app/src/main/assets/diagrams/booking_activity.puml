@@ -1,0 +1,50 @@
+@startuml Booking Process
+
+|Customer|
+start
+:Search for available rooms;
+:Select desired room;
+
+|System|
+:Check room availability;
+if (Room available?) then (yes)
+  :Display room details;
+  :Show pricing;
+else (no)
+  :Display "Room not available";
+  stop
+endif
+
+|Customer|
+:Enter booking details;
+:Select check-in date;
+:Select check-out date;
+:Select check-in time;
+:Select check-out time;
+
+|System|
+:Validate booking details;
+if (Details valid?) then (yes)
+  :Calculate total price;
+  :Update room status to booked;
+  :Store booking information;
+  :Generate booking confirmation;
+else (no)
+  :Display validation errors;
+  stop
+endif
+
+|Customer|
+:Review booking details;
+:Confirm booking;
+
+|System|
+:Finalize booking;
+:Send confirmation email;
+
+|Customer|
+:Receive booking confirmation;
+
+stop
+
+@enduml 

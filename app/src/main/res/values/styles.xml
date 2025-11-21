@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text Styles -->
+    <style name="TextAppearance.LuxeVista.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="TextAppearance.LuxeVista.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="TextAppearance.LuxeVista.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextAppearance.LuxeVista.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextAppearance.LuxeVista.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_muted</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="Widget.LuxeVistaResort.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/text_light</item>
+        <item name="backgroundTint">@color/accent</item>
+    </style>
+
+    <style name="Widget.LuxeVistaResort.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/accent</item>
+        <item name="strokeColor">@color/accent</item>
+    </style>
+
+    <style name="Widget.LuxeVistaResort.Button.Text" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/accent</item>
+    </style>
+
+    <!-- Card Styles -->
+    <style name="Widget.LuxeVistaResort.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="contentPadding">16dp</item>
+        <item name="cardBackgroundColor">@color/card_background</item>
+    </style>
+
+    <!-- Input Styles -->
+    <style name="Widget.LuxeVistaResort.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxStrokeColor">@color/primary</item>
+        <item name="hintTextColor">@color/primary</item>
+        <item name="android:textColorHint">@color/input_hint</item>
+        <item name="boxBackgroundColor">@color/input_background</item>
+    </style>
+
+    <!-- Toolbar Styles -->
+    <style name="Widget.LuxeVista.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:background">@color/background_light</item>
+        <item name="titleTextAppearance">@style/TextAppearance.LuxeVista.Headline2</item>
+        <item name="subtitleTextAppearance">@style/TextAppearance.LuxeVista.Body2</item>
+        <item name="titleTextColor">@color/text_primary</item>
+        <item name="subtitleTextColor">@color/text_secondary</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <!-- Bottom Navigation Styles -->
+    <style name="Widget.LuxeVistaResort.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/bottom_nav_item_color</item>
+        <item name="itemTextColor">@color/bottom_nav_item_color</item>
+        <item name="itemRippleColor">@color/primary</item>
+        <item name="elevation">8dp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <!-- Progress Bar Styles -->
+    <style name="Widget.LuxeVista.ProgressBar" parent="Widget.MaterialComponents.ProgressIndicator">
+        <item name="indicatorColor">@color/primary</item>
+        <item name="trackColor">@color/surface_2</item>
+    </style>
+
+    <!-- Chip Styles -->
+    <style name="Widget.LuxeVista.Chip" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="chipBackgroundColor">@color/chip_background</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <!-- Snackbar Styles -->
+    <style name="Widget.LuxeVistaResort.Snackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="snackbarButtonStyle">@style/Widget.LuxeVistaResort.Button</item>
+        <item name="snackbarTextViewStyle">@style/Widget.LuxeVistaResort.Snackbar.TextView</item>
+    </style>
+
+    <style name="Widget.LuxeVistaResort.Snackbar.TextView" parent="Widget.MaterialComponents.Snackbar.TextView">
+        <item name="android:textColor">@color/text_light</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <!-- Custom ImageView styles -->
+    <style name="Widget.LuxeVista.ImageView.Round" parent="">
+        <item name="cornerRadius">12dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- Custom Switch style -->
+    <style name="Widget.LuxeVista.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="thumbTint">@color/switch_thumb</item>
+        <item name="trackTint">@color/switch_track</item>
+    </style>
+
+    <style name="CircleImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources> 

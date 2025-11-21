@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Luxe Vista Resort</string>
+    
+    <!-- Image Content Descriptions -->
+    <string name="room_image">Room Image</string>
+    <string name="service_image">Service Image</string>
+    <string name="attraction_image">Attraction Image</string>
+    
+    <!-- Common Actions -->
+    <string name="book_now">Book Now</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="book_room">Book Room</string>
+    <string name="book_service">Book Service</string>
+    <string name="book_attraction">Book Attraction</string>
+    <string name="cancel_booking">Cancel Booking</string>
+    
+    <!-- Status -->
+    <string name="pending">Pending</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="completed">Completed</string>
+    <string name="status_available">Available</string>
+    <string name="status_booked">Booked</string>
+    <string name="status_cancelled">Cancelled</string>
+    
+    <!-- Booking Details -->
+    <string name="check_in">Check In</string>
+    <string name="check_out">Check Out</string>
+    <string name="guests">Guests</string>
+    <string name="price">Price</string>
+    <string name="total">Total</string>
+    
+    <!-- Loading States -->
+    <string name="loading">Loading...</string>
+    
+    <!-- Error Messages -->
+    <string name="error_loading">Error loading data</string>
+    <string name="error_saving">Error saving data</string>
+    <string name="error_booking">Error booking: %1$s</string>
+    <string name="error_cancelling">Error cancelling: %1$s</string>
+    <string name="error_loading_attractions">Error loading attractions</string>
+    <string name="error_loading_services">Error loading services</string>
+    <string name="error_loading_rooms">Error loading rooms</string>
+    <string name="error_loading_profile">Error loading profile</string>
+    <string name="error_saving_profile">Error saving profile</string>
+    <string name="error_loading_bookings">Error loading bookings</string>
+    <string name="error_loading_history">Error loading history</string>
+    <string name="error_loading_attraction">Error loading attraction</string>
+    <string name="error_loading_service">Error loading service</string>
+    <string name="error_loading_room">Error loading room</string>
+    <string name="error_loading_user">Error loading user</string>
+    <string name="error_saving_user">Error saving user</string>
+    <string name="error_loading_booking">Error loading booking</string>
+    <string name="error_saving_booking">Error saving booking</string>
+    <string name="error_cancelling_booking">Error cancelling booking</string>
+    <string name="error_loading_attraction_bookings">Error loading attraction bookings</string>
+    <string name="error_loading_service_bookings">Error loading service bookings</string>
+    <string name="error_loading_room_bookings">Error loading room bookings</string>
+    <string name="error_loading_attraction_booking">Error loading attraction booking</string>
+    <string name="error_loading_service_booking">Error loading service booking</string>
+    <string name="error_loading_room_booking">Error loading room booking</string>
+    <string name="error_saving_attraction_booking">Error saving attraction booking</string>
+    <string name="error_saving_service_booking">Error saving service booking</string>
+    <string name="error_saving_room_booking">Error saving room booking</string>
+    <string name="error_cancelling_attraction_booking">Error cancelling attraction booking</string>
+    <string name="error_cancelling_service_booking">Error cancelling service booking</string>
+    <string name="error_cancelling_room_booking">Error cancelling room booking</string>
+    
+    <!-- Success Messages -->
+    <string name="success_saved">Successfully saved</string>
+    <string name="success_cancelled">Successfully cancelled</string>
+    <string name="success_booked">Successfully booked</string>
+    <string name="success_saved_profile">Successfully saved profile</string>
+    <string name="success_saved_user">Successfully saved user</string>
+    <string name="success_saved_booking">Successfully saved booking</string>
+    <string name="success_cancelled_booking">Successfully cancelled booking</string>
+    <string name="success_saved_attraction_booking">Successfully saved attraction booking</string>
+    <string name="success_saved_service_booking">Successfully saved service booking</string>
+    <string name="success_saved_room_booking">Successfully saved room booking</string>
+    <string name="success_cancelled_attraction_booking">Successfully cancelled attraction booking</string>
+    <string name="success_cancelled_service_booking">Successfully cancelled service booking</string>
+    <string name="success_cancelled_room_booking">Successfully cancelled room booking</string>
+    
+    <!-- Confirmation Messages -->
+    <string name="confirm_cancel">Are you sure you want to cancel this booking?</string>
+    <string name="booking_success">Service booked successfully!</string>
+    <string name="booking_cancelled">Booking cancelled successfully!</string>
+    
+    <string-array name="price_ranges">
+        <item>All Prices</item>
+        <item>Under $100</item>
+        <item>$100 - $200</item>
+        <item>$200 - $300</item>
+        <item>$300 - $400</item>
+        <item>Over $400</item>
+    </string-array>
+</resources>

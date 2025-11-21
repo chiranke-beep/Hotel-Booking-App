@@ -1,0 +1,66 @@
+@startuml Hotel ER Diagram
+
+' Entities
+entity "Room" {
+  * id : string <<PK>>
+  --
+  * name : string
+  * description : string
+  * price : double
+  * imageUrl : string
+  * isBooked : boolean
+  * checkInDate : string
+  * checkOutDate : string
+  * checkInTime : string
+  * checkOutTime : string
+}
+
+entity "User" {
+  * id : string <<PK>>
+  --
+  * name : string
+  * email : string
+  * phone : string
+  * address : string
+}
+
+entity "Booking" {
+  * id : string <<PK>>
+  --
+  * userId : string <<FK>>
+  * roomId : string <<FK>>
+  * bookingDate : string
+  * totalPrice : double
+  * status : string
+}
+
+entity "Review" {
+  * id : string <<PK>>
+  --
+  * userId : string <<FK>>
+  * roomId : string <<FK>>
+  * rating : int
+  * comment : string
+  * reviewDate : string
+}
+
+entity "Offer" {
+  * id : string <<PK>>
+  --
+  * roomId : string <<FK>>
+  * title : string
+  * description : string
+  * discountPercentage : double
+  * startDate : string
+  * endDate : string
+  * isActive : boolean
+}
+
+' Relationships
+User ||--o{ Booking : "makes"
+Room ||--o{ Booking : "has"
+User ||--o{ Review : "writes"
+Room ||--o{ Review : "receives"
+Room ||--o{ Offer : "has"
+
+@enduml 

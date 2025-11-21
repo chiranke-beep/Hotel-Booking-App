@@ -1,0 +1,63 @@
+erDiagram
+    Users {
+        string user_id PK
+        string name
+        string email
+        string phone
+        text address
+    }
+
+    Rooms {
+        string room_id PK
+        string name
+        text description
+        decimal price
+        string image_url
+        boolean is_booked
+    }
+
+    RoomAvailability {
+        string availability_id PK
+        string room_id FK
+        date check_in_date
+        date check_out_date
+        time check_in_time
+        time check_out_time
+    }
+
+    Bookings {
+        string booking_id PK
+        string user_id FK
+        string room_id FK
+        timestamp booking_date
+        decimal total_price
+        string status
+    }
+
+    Reviews {
+        string review_id PK
+        string user_id FK
+        string room_id FK
+        int rating
+        text comment
+        timestamp review_date
+    }
+
+    Offers {
+        string offer_id PK
+        string room_id FK
+        string title
+        text description
+        decimal discount_percentage
+        date start_date
+        date end_date
+        boolean is_active
+    }
+
+    Users ||--o{ Bookings : "makes"
+    Rooms ||--o{ Bookings : "has"
+    Users ||--o{ Reviews : "writes"
+    Rooms ||--o{ Reviews : "receives"
+    Rooms ||--o{ RoomAvailability : "has"
+    Rooms ||--o{ Offers : "has"
+} 
